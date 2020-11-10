@@ -1,0 +1,73 @@
+@media screen and(min-width: 1250px) {
+  body {
+    justify-content: start;
+    align-items: center;
+    background-image: url("../images/hero-desktop.jpg");
+    background-size: 610px 800px;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    padding: 0;
+  }
+  .container {
+    justify-content: start;
+    align-content: start;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .main-logo {
+    order: 1;
+    margin: 11% 0% 10% 27%;
+  }
+  .main-logo img {
+    width: 158px;
+    height: 33px;
+  }
+  .apparel-section {
+    order: 2;
+    margin: 0 0 4rem 10rem;
+  }
+  .main-title {
+    font-size: 4rem;
+    line-height: 64px;
+    letter-spacing: 17.320635px;
+    text-align: left;
+    margin: 75px 0 0px 4px;
+  }
+  .main-title--bold {
+    line-height: 71px;
+  }
+  .main-description {
+    font-size: 1rem;
+    line-height: 28px;
+    padding: 0;
+    text-align: left;
+    padding: 0;
+    margin: 14px 0 0px 6px;
+  }
+  form {
+    height: 100px;
+  }
+  .input {
+    width: 445px;
+    height: 56px;
+    padding-left: 8%;
+    margin-left: 1%;
+    font-size: 1rem;
+  }
+  button {
+    width: 100px;
+    height: 56px;
+    right: -6px;
+  }
+  .input:invalid {
+    background-position: 73% 50%;
+  }
+  .invalid {
+    line-height: 28px;
+    margin: 1% 0 0 8%;
+  }
+  .photo-section {
+    order: 3;
+    display: none;
+  }
+}

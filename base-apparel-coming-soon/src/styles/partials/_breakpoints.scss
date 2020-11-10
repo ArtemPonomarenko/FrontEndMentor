@@ -1,0 +1,64 @@
+
+//****************************//
+//****FOR FUTURE REFERENCES**//
+//***************************//
+
+// @mixin breakpoint($point) {
+//   @if $point == papa-bear {
+//     @media (max-width: 1600px) { @content; }
+//   }
+//   @else if $point == mama-bear {
+//     @media (max-width: 1250px) { @content; }
+//   }
+//   @else if $point == baby-bear {
+//     @media (max-width: 650px)  { @content; }
+//   }
+// }
+
+
+// .module {
+//   width: 25%;
+//   @include breakpoint(baby-bear) {
+//     width: 100%;
+//   }
+// }
+
+
+// .sidebar {
+//   float: right;
+//   width: 33.33%;
+//   @include bp(mama-bear) {
+//     width: 25%;
+//   }
+// }
+
+// Here’s some ideas:
+
+// baby-bear
+// mama-bear
+// papa-bear
+
+// straw-house
+// stick-house
+// brick-house
+
+// private
+// corporal
+// sergeant
+// captain
+// major
+// lieutenant
+// colonel
+// general
+
+// alpha
+// beta
+// gamma
+// delta
+// epsilon
+
+// very-small
+// small
+// medium
+// large
+// very-large

@@ -1,0 +1,131 @@
+@use "partials/typography" as *;
+@use "partials/mixins" as *;
+@use "partials/colors" as *;
+@use "partials/placeholders" as *;
+//General rules
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  background-color: $white-gradient;
+  @include flex-container(center, start);
+  padding-top: 2rem;
+  font-family: $main-font;
+  font-size: $font-size;
+  font-weight: $normal;
+  text-align: center;
+  // overflow: hidden;
+}
+.container { 
+  @include flex-container(center, start);
+  flex-flow: column;
+  width: 100%;
+  max-width: min-content;
+}
+// Logo section
+.main-logo {
+  margin-left: 9%;
+}
+.main-logo img {
+  width: 100px;
+  height: 20.89px;  
+  order: 1;
+}
+//Apparel section 
+.apparel-section {
+  order: 3;
+  margin-top: 16%;
+}
+.main-title {
+  color: #ce9898;
+  text-transform: uppercase; 
+  font-size: 2.5rem;
+  line-height: 42px;
+  font-weight: $thin;
+  letter-spacing: 10.8253975px;  
+}
+.main-title--bold {
+  font-weight: $bold;
+  color: $dark-grayish-red;
+}
+.main-description {
+  color: #ce9898;
+  font-size: 0.875rem;
+  line-height: 22px;
+  padding: 0 10%;
+  margin-top: 5%;
+}
+form {
+  margin: 9% 0;
+  position: relative;
+  height: 73px;
+}
+.invalid {
+  display: none;
+}
+.input {
+  width: 311px;
+  height: 48px;
+  border-radius: 28px;
+  border: 1px solid $soft-red;
+  color: #423a3a;
+  font-size: 0.875rem;
+  line-height: 28px;
+  padding-left: 6%;
+  &:focus {
+    outline: none;
+  }
+  &:invalid {
+    background: url("../images/icon-error.svg");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: 210px 10px;
+  }
+}
+input::placeholder {
+  opacity: 0.5;
+  color: $desaturated-red;
+  font-size: 14px;
+  line-height: 28px;
+}
+button {
+  position: absolute;
+  top: 0;
+  right: 32px;
+  width: 64px;
+  height: 48px;
+  border-style: none;
+  border-radius: 28px;
+  background: $pink-gradient;
+  &:hover {
+    background: linear-gradient(135deg, #F8BFBF, #EE8B8B);
+    box-shadow: 0px 15px 20px rgba(198,110,110,0.25);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.invalid {
+  margin: 3% 0 0 14%;
+  text-align: left;
+  color: $soft-red;
+  font-size: 0.875rem;
+  line-height: 13px;
+}
+input:invalid + p.invalid { 
+  display: block;
+ }
+//Photo section
+.photo-section {
+  margin-top: 7%;
+}
+.photo-section img {
+  order: 2;
+  width: 376px;
+  height: 250px;
+}
+
+@import "partials/media";
