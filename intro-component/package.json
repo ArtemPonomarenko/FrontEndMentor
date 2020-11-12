@@ -1,17 +1,18 @@
 {
-  "name": "base-apparel-coming-soon",
+  "name": "intro-component",
   "version": "1.0.0",
-  "description": "![Design preview for the Base Apparel coming soon page coding challenge](./design/desktop-preview.jpg)",
-  "main": "index.html",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "start": "parcel ./src/index.html -d development",
-    "production": "parcel build ./src/index.html -d build --public-url ."
+    "production": "parcel build ./src/index.html -d production --public-url ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cssnano": "^4.1.10",
+    "jquery": "^3.5.1",
     "normalize.css": "^8.0.1",
     "sass": "^1.29.0"
   }
