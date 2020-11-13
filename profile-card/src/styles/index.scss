@@ -1,0 +1,112 @@
+@use 'partials/vendors';
+@use 'partials/typography' as *;
+@use 'partials/colors' as *;
+@use 'partials/mixins' as *;
+@use 'partials/placeholders' as *;
+@use 'partials/breakpoints' as *;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  @include flex-container(center, center);
+  font: $normal $font-size $main-font;
+  min-height: 100vh;
+  background-color: $dark-cyan;
+  text-align: center;
+  background-image: 
+  url('../images/bg-pattern-top.svg'),
+  url('../images/bg-pattern-bottom.svg');
+  background-position:
+  top -21rem left -26rem, /* this positions the first image */
+  bottom -19rem right -26rem;  /* this positions the second image */
+  background-repeat: no-repeat;
+  background-size: 622px 621px, 622px 621px;
+}
+.container {
+  @include flex-container(center, center);
+  flex-flow: column;
+  width: 90%;
+  max-width: 326px;
+  box-shadow: 0px 50px 100px -20px rgba(8,70,94,0.51);
+}
+.background {
+  width: 100%;
+  height: 140px;
+  background-image: url('../images/bg-pattern-card.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px 15px 0 0;
+}
+.user {
+  background: #ffffff;
+  width: 100%;
+  height: 145px;
+}
+.user img {
+  border-radius: 50%;
+  width: 106px;
+  height: 106px;
+  background-color: white;
+  border: solid 5px #ffffff;
+  margin-top: -16%;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.info {
+  margin-top: 19px;
+}
+.username {
+  color: #2e3349;
+  font-size: 18px;
+  font-weight: $bold;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.user-age {
+  color: #6b7082;
+}
+.from {
+  color: #6b7082;
+  font-size: 14px;
+  margin-top: 12px;
+}
+.social {
+  background: #ffffff;
+  border-top: 0.5px solid $dark-gray;
+  padding: 27px 27px;
+  width: 100%;
+  height: 88px;
+  border-radius: 0 0 15px 15px;
+  @include flex-container (space-around, center);
+  flex-flow: row;
+
+}
+.social-card {
+  width: 33%;
+  height: 100%;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.amount {
+  display: inline-block;
+  width: 80%;
+  margin: 0 auto;
+  color: #2e3349;
+  font-weight: $bold;
+}
+.contribution {
+  display: inline-block;
+  width: 80%;
+  margin: 0 auto;
+  color: #6b7082;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+@import './partials/media'

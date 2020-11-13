@@ -1,0 +1,12 @@
+@media (min-width: 950px) {
+  body {
+    background-position:
+    top -31rem left -18rem,/* this positions the first image */
+    bottom -40rem right -14rem;/* this positions the second image */
+    background-repeat: no-repeat;
+    background-size: 978px 976px, 978px 976px;
+  }
+  .container {
+    max-width: 350px;
+  }
+}

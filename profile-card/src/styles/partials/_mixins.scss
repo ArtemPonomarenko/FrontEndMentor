@@ -1,0 +1,11 @@
+@mixin flex-container($jc-value, $ai-value) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: $jc-value;
+      -ms-flex-pack: $jc-value;
+          justify-content: $jc-value;
+  -webkit-box-align: $ai-value;
+      -ms-flex-align: $ai-value;
+          align-items: $ai-value;
+}
