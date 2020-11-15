@@ -1,0 +1,65 @@
+@media (min-width: 1000px) {
+  body {
+    padding-top: 1.5rem;
+  }
+  .container {
+    width: 640px;
+    max-width: 90%;
+  }
+  .main-logo {
+    margin-top: 4rem;
+  }
+  .main-logo img {
+    width: 87px;
+    height: 23px;
+  }
+  .main-title {
+    font-size: 48px;
+    font-weight: 300;
+    margin-top: 2.7rem;
+    letter-spacing: 0.2px;
+  }
+  .sub-title {
+    letter-spacing: 0.1px;
+    color: #15202a;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .notify-form {
+    width: 100%;
+    margin-top: 1.7rem;
+  }
+  .notify-input, .notify-button{
+    height: 56px;
+    font-size: 16px;
+  }
+  .notify-input {
+    width: 65.5%;
+    margin-right: 2%;
+    padding-left: 5%;
+    &::placeholder {
+      font-size: 16px;
+    }
+  }
+  .notify-button {
+    width: 31%;
+  }
+  .notify-input:invalid:focus + .error-msg{
+    font-size: 12px;
+    position: absolute;
+    top: 79%;
+    left: 5%;
+  }
+  .dashboard {
+    margin-top: 4.3rem;
+  }
+  .dashboard img {
+    height: 385px;
+  }
+  .social-btns {
+    margin-top: 4.1rem;
+  }
+  .copyright-msg {
+    font-size: 12px;
+  }
+}
