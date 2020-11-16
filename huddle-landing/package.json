@@ -1,0 +1,19 @@
+{
+  "name": "intro-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./src/index.html -d development",
+    "production": "parcel build ./src/index.html -d production --public-url ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "jquery": "^3.5.1",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.29.0"
+  }
+}
