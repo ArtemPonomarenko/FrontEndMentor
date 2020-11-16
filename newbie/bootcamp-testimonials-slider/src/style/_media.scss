@@ -1,0 +1,96 @@
+@media screen and (min-width: 300px) and (max-width: 1000px){
+  body {
+    height: 100%;
+    background-position: 0 100%;
+    background-size: 285px 72px;
+  }
+  .container {
+    min-height: 308px;
+    width: 327px;
+    padding: 0 0 0 0;
+  }
+  .slider {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    width: 95%;
+    min-width: 327px;
+  }
+  .slider__testimonial {
+    width: 327px;
+    max-width: 100%;
+    height: max-content;
+  }
+  .slider__text {
+    width: 311px;
+    height: 163px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    left: 7px;
+    padding-top: 26px; 
+    background-image: url("images/pattern-quotes.svg");
+    background-position: 130px 0px;
+    background-size: 60px 50px;
+  }
+  .testimomial__author {
+    max-width: 100%;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 33px;
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+  }
+  .slider__name {
+    margin-top: 0;
+    width: 100%;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .slider__position {
+    margin-left: 0;
+    width: 100%;  
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+  }
+  .slider__image {
+    width: 299px;
+    height: 308px;
+    padding: 55px 0 0 44px;
+    margin-left: 0;
+    background-position: -7px 12px;
+    background-size: contain;
+  }
+  .slider__photo {
+    width: 299px;
+    min-width: 200px;
+    height: 327px;
+    min-height: 200px;
+    top: 0;
+    left: 0;
+  }
+  .slider__photo img {
+    width: 254px;
+    min-width: 254px;
+    height: 253px;
+    min-height: 253px;
+  }
+  .slider__btns {
+    width: 80px;
+    height: 40px;
+    top: -95px;
+    left: 88px;
+  }
+  .slider__btn .arrow {
+    width: 5.71px;
+    height: 11.43px;
+  }
+
+
+}

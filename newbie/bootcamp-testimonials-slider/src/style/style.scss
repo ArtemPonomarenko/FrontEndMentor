@@ -1,0 +1,125 @@
+@use "typography" as *;
+@use "colors" as *;
+@use "background" as *;
+@use "mixins" as *;
+
+body {
+  @include flex-container(center, center);
+  height: 100vh;
+  font-family: $main-font;
+  font-size: $font-size;
+  background-image: url("images/pattern-curve.svg");
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: inherit;
+}
+.container {
+  min-height: 668px;
+  width: 1297px;
+  padding: 10px;
+}
+.slider {
+  @include flex-container(space-between, center);
+  width: 1297px;
+  min-height: 658px;
+}
+.slider__testimonial {
+  width: 505px;
+  max-width: 45%;
+  height: 658px;
+}
+.slider__text {
+  color: $dark-blue;
+  font-size: 2rem;
+  font-weight: $thin;
+  line-height: 44px;
+  position: relative;
+  z-index: 1;
+  left: 94px;
+  width: 635px;
+  height: 250px;
+  padding-top: 251px; 
+  background-image: url("images/pattern-quotes.svg");
+  background-repeat: no-repeat;
+  background-position: 95px 187px;
+}
+.testimomial__author {
+  display: inline-block;
+  margin-left: 96px;
+  width: max-content;
+}
+.slider__name, .slider__position {
+  width: fit-content;
+  height: 38px;
+  line-height: 38px;
+  font-size: 1.25rem;
+}
+.slider__name {
+  color: $dark-blue;
+  font-size: 1.25rem;
+  font-weight: $bold;
+  display: inline-block;
+  margin-top: 2px;
+}
+.slider__position {
+  color: $grayish-blue;
+  font-weight: $normal;
+  display: inline-block;
+  margin-left: 3px;
+}
+.slider__image {
+  width: 698px;
+  height: 658px;
+  margin-left: 94px;
+  background-image: url("images/pattern-bg.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover
+}
+.slider__photo {
+  position: relative;
+  width: 540px;
+  min-width: 400px;
+  top: 13%;
+  left: 9.4%;
+  height: 540px;
+  min-height: 400px;
+}
+.slider__photo img {
+  position: relative;
+  z-index: 0;
+
+  width: 540px;
+  min-width: 400px;
+  height: 540px;
+  min-height: 400px;
+}
+.slider__btns {
+  @include flex-container(space-around, center);
+  width: 112px;
+  height: 56px;
+  border-radius: 28px;
+  background: #ffffff;
+  box-shadow: 0px 15px 20px -10px rgba(36,36,113,0.1);
+  position: relative;
+  top: 61px;
+  left: 127px;
+}
+.slider__btn .arrow {
+  width: 13px;
+  display: inline-block;
+  height: 20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  &:hover {
+    cursor: pointer;
+  }  
+}
+.slider__btn--prev .arrow {
+  background-image: url("images/icon-prev.svg");
+}
+.slider__btn--next .arrow {
+  background-image: url("public/images/icon-next.svg");
+}
+@import "media";
