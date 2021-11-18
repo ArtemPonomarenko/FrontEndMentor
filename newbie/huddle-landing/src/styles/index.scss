@@ -26,8 +26,8 @@ body {
 .container {
   @include flex-container(center, start);
   flex-flow: column;
-  width: 300px;
-  max-width: 90%;
+  min-width: 300px;
+  max-width: 60%;
 }
 .main-logo img {
   width: 123px;
