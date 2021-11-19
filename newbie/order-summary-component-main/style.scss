@@ -13,6 +13,7 @@ body {
   background-size: 639.27px 194px;
   background-origin: 0 0;
   background-position: 0 0;
+  margin-bottom: 71px;
 }
 .card {
   width: 327px;
@@ -61,7 +62,6 @@ body {
   height: 48px;
 }
 .type {
-  // margin-left: -5px;
   width: 108px;
 }
 .type--title {
@@ -116,9 +116,17 @@ body {
 .cancel-btn:hover {
   color: #1f2e55;
 }
+@media screen and (min-width: 630px) {
+  body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: contain;
+    margin-bottom: 101px;
+  }
+}
 @media screen and (min-width: 1440px) {
   body {
     background-position: 0 0;
+    margin-bottom: 101px;
   }
   .card {
     width: 450px;
