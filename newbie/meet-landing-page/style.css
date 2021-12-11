@@ -1,0 +1,392 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  min-width: 375px;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  background-color: #fafafa;
+}
+
+.main--logo {
+  width: 119px;
+  height: 28px;
+  display: block;
+  margin: 3rem auto 3.4rem auto;
+}
+
+.header {
+  background-image: url(./assets/tablet/image-hero.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-top: 53%;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 36px;
+  text-align: center;
+}
+
+.title__main {
+  color: #28283d;
+  width: 275px;
+  margin: 0 auto;
+  font-size: 40px;
+  line-height: 44px;
+}
+
+.description {
+  width: 327px;
+  margin: 0 auto;
+  color: #87879d;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+}
+
+.description__header {
+  margin-top: 24px;
+}
+
+.button {
+  display: block;
+  width: 193px;
+  height: 58px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 58px;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 29px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.button__header {
+  background: #4d96a9;
+  margin-top: 33px;
+}
+
+.button__header:hover {
+  background-color: #71c0d4;
+}
+
+.button__what:hover {
+  background-color: #b18bdd;
+}
+
+.button__what {
+  width: 139px;
+  height: 58px;
+  background: #855fb1;
+  margin-top: 15px;
+}
+
+.meetings {
+  margin-top: 147px;
+}
+
+.bookmark {
+  width: 56px;
+  height: 56px;
+  display: block;
+  margin: 0 auto;
+  color: #87879d;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 56px;
+  border: 1px solid #87879d;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  background-color: #fafafa;
+}
+
+.bookmark::before {
+  content: " ";
+  width: 1px;
+  height: 139px;
+  position: absolute;
+  border-left: 1px solid #28283d;
+  opacity: 0.25;
+  position: absolute;
+  left: 50%;
+  top: -139px;
+}
+
+.description__footer {
+  color: #fafafa;
+  font-size: 18px;
+}
+
+.title__header {
+  color: #87879d;
+}
+
+.title__footer {
+  color: #fafafa;
+}
+
+.participants {
+  margin-top: 66px;
+  min-height: 310px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-evenly;
+}
+
+.participant {
+  width: 151px;
+  height: 143px;
+  margin: 0 5px;
+  border-radius: 8px;
+}
+
+.title__sub-title {
+  margin-top: 63px;
+  color: #87879d;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.title__meetings {
+  margin-top: 25px;
+  color: #28283d;
+  padding: 0 25px;
+}
+
+.description__meetings {
+  margin-top: 33px;
+}
+
+.footer {
+  margin-top: 175px;
+  min-height: 428px;
+  padding-top: 65px;
+  position: relative;
+  background-color: #4d96a9;
+  background-image: url(./assets/mobile/image-footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.two {
+  margin-top: -95px;
+  position: absolute;
+  left: 42%;
+  right: 42%;
+}
+
+.button__footer {
+  margin-top: 32px;
+  width: 193px;
+  height: 58px;
+  background-color: #855fb1;
+  color: #ffffff;
+}
+
+.button__footer:hover {
+  background-color: #b18bdd;
+}
+
+.button__a {
+  text-align: center;
+  line-height: 58px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.version {
+  color: #d9b8ff;
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 700px) {
+  .header {
+    padding-top: 50%;
+  }
+
+  .title__main {
+    font-size: 48px;
+    width: 340px;
+  }
+
+  .description__header {
+    margin-top: 33px;
+    width: 457px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .buttons {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px auto 0;
+  }
+
+  .button__header {
+    margin: 0;
+  }
+
+  .button__what {
+    margin: 0;
+  }
+
+  .meetings {
+    margin-top: 168px;
+  }
+
+  .participants {
+    justify-content: space-between;
+    width: 689px;
+    min-height: 0;
+    margin: 64px auto 0;
+  }
+
+  .participant {
+    margin: 0;
+    width: 164px;
+    height: 156px;
+  }
+
+  .title__sub-title {
+    margin-top: 50px;
+  }
+
+  .title__meetings {
+    width: 470px;
+    margin: 0 auto;
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .description__meetings {
+    width: 573px;
+    margin: 30px auto 0;
+  }
+
+  .footer {
+    margin-top: 193px;
+  }
+
+  .title__footer {
+    width: 457px;
+    margin: 28px auto 0;
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .description__footer {
+    width: 573px;
+    margin: 31px auto 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .button__footer {
+    margin-top: 38px;
+  }
+}
+@media screen and (min-width: 1339px) {
+  .main--logo {
+    margin: 4.8rem auto 3.4rem auto;
+  }
+
+  .header {
+    padding-top: 4%;
+    background-image: url(./assets/desktop/image-hero-left.png), url(./assets/desktop/image-hero-right.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, top right;
+    background-size: 394px 323px, 394px 323px;
+  }
+
+  .title__main {
+    width: 445px;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 64px;
+    text-align: center;
+  }
+
+  .description__header {
+    width: 540px;
+    font-size: 18px;
+  }
+
+  .meetings {
+    margin-top: 200px;
+  }
+
+  .participants {
+    width: 1110px;
+  }
+
+  .participant {
+    width: 255px;
+    height: 242px;
+  }
+
+  .title__sub-title {
+    margin-top: 80px;
+  }
+
+  .description__meetings {
+    width: 540px;
+  }
+
+  .footer {
+    background-image: url(./assets/desktop/image-footer.jpg);
+    background-size: cover;
+    min-height: 308px;
+    padding-top: 0;
+    padding: 0 165px 0 165px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .title__footer {
+    text-align: left;
+    height: 88px;
+    width: 350px;
+    margin: 0;
+  }
+
+  .description__footer {
+    text-align: left;
+    width: 350px;
+    height: 78px;
+    margin: 0;
+  }
+
+  .button__footer {
+    margin: 0;
+  }
+
+  .two {
+    margin-top: -305px;
+    position: absolute;
+    left: 42%;
+    right: 42%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
