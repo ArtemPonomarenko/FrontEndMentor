@@ -1,0 +1,323 @@
+$white: #fcfaf9;
+$green: #66e2dc;
+$black: #191826;
+$red: #fa7453;
+$yellow: #ffb964;
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  min-width: 375px;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  background-color: $white;
+}
+header {
+  background-image: url(./assets/bg-main-mobile.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: -1rem -17.5rem;
+  padding-bottom: 193px;
+}
+.main-logo {
+  width: 146.06px;
+  height: 32px;
+  margin: 38px 0 0 24px;
+}
+.main-title {
+  font-size: 2.5rem;
+  color: $black;
+  font-weight: 700;
+  line-height: 3rem;
+  text-align: left;
+  margin: 60px auto 0;
+  max-width: 87%;
+}
+.description {
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.625rem;
+  text-align: left;
+  max-width: 87%;
+}
+.main-description {
+  margin: 22px auto 0;
+}
+.equilizer-section {
+  max-width: 375px;
+  min-height: 926px;
+
+  margin: 0 auto;
+  background-image: url(./assets/bg-pattern-2.svg);
+  background-size: 280px 420px;
+  background-position: top;
+  background-color: $black;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  position: relative;
+}
+.illustration-app {
+  position: absolute;
+  top: -98px;
+  width: 208.97px;
+  height: 430px;
+  margin: 0 22%;
+}
+.premium-eq {
+  position: absolute;
+  bottom: 0;
+  width: 375px;
+  height: 546px;
+  background-color: $red;
+  border-radius: 12px;
+  color: $white;
+  padding: 18px 25px 0 36px;
+  margin: 0 auto 0;
+}
+.premium-eq--title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.premium-eq--description {
+  font-size: 1.125rem;
+  font-weight: 100;
+  line-height: 1.75rem;
+  margin-top: 17px;
+  margin-bottom: 0;
+}
+.price {
+  font-size: 4.0625rem;
+  font-weight: 700;
+  margin-top: 27px;
+  display: inline-block;
+}
+.per-month {
+  font-size: 1.25rem;
+  height: 5px;
+  font-weight: 100;
+  letter-spacing: -0.2px;
+  vertical-align: super;
+}
+.btn {
+  display: block;
+  width: 296px;
+  height: 61px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 12px;
+  line-height: 3.8125rem;
+  color: $white;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -0.18px;
+  margin-left: 5px;
+}
+.btn__ios {
+  background-color: $black;
+  margin-top: 17px;
+}
+.btn__ios:hover {
+  background-color: $green;
+}
+.btn__android {
+  background-color: White;
+  color: $black;
+  margin-top: 17px;
+}
+.btn__android:hover {
+  background-color: $yellow;
+}
+
+.main-logo__footer {
+  margin-top: 59px;
+}
+.description__footer {
+  margin: 30px auto 0;
+  padding: 0 0 0 0;
+}
+.socials {
+  margin: 93px 0 25px;
+  max-width: 34%;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.fab {
+  margin-left: 20px;
+}
+.fab:hover {
+  color: $red;
+}
+.footer--email {
+  font-weight: bold;
+}
+@media screen and (min-width: 700px) {
+  .main-logo {
+    margin: 60px 0 0 38px;
+  }
+  header {
+    background-image: url(./assets/bg-main-tablet.png),
+      url(./assets/bg-pattern-1.svg);
+    background-position: -25rem -19rem, 100% 0;
+    background-size: auto, 266.67px 400px;
+    padding-bottom: 249px;
+  }
+  .main-title {
+    font-size: 4rem;
+    letter-spacing: -0.527273px;
+    margin: 93px 0 0 40px;
+    line-height: 4rem;
+    padding-right: 60px;
+  }
+
+  .description {
+    max-width: 66%;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .main-description {
+    margin: 30px 0 0 39px;
+  }
+  .equilizer-section {
+    max-width: 90.5%;
+    min-height: 597px;
+    margin: 0 auto;
+    background-position: 54% -18%;
+  }
+  .illustration-app {
+    width: 270.21px;
+    height: 556px;
+    top: -140px;
+    margin: 0 9%;
+  }
+  .premium-eq {
+    // margin: 0 auto 0;
+    width: 399px;
+    height: 546px;
+
+    bottom: -99px;
+    right: 61px;
+
+    padding: 22px 25px 0 50px;
+  }
+  footer {
+    margin-top: 125px;
+    margin-bottom: 25px;
+    padding-right: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 33px 200px;
+  }
+
+  .main-logo__footer {
+    width: 87%;
+    margin: 60px 0 0 33px;
+  }
+  .main-logo__footer img {
+    width: auto;
+    height: auto;
+  }
+  .description__footer {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    margin: 0px 0px 0px 33px;
+    max-width: 47%;
+    align-self: flex-end;
+    // flex: 2;
+  }
+  .socials {
+    margin: 0;
+    align-self: center;
+  }
+}
+
+@media screen and(min-width: 1024px) {
+  header {
+    background-size: auto;
+    background-position: 11rem -17rem, 100% -39px;
+  }
+  .main-logo {
+    margin-left: 166px;
+  }
+  .main-title {
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+    letter-spacing: -0.7px;
+    max-width: 70%;
+    margin-left: 166px;
+    margin-top: 124px;
+  }
+  .main-description {
+    margin-left: 166px;
+    margin-top: 42px;
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+    max-width: 55%;
+  }
+  .equilizer-section {
+    width: 1110px;
+    height: 600px;
+    margin-top: 72px;
+    background-size: auto;
+    background-position: 42% -32%;
+  }
+  .illustration-app {
+    width: 312px;
+    height: 642px;
+    margin-top: -72px;
+  }
+  .premium-eq {
+    width: 446px;
+    height: 625px;
+    right: 94px;
+    bottom: -117px;
+    padding-right: 52px;
+  }
+  .premium-eq--title {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+  }
+  .premium-eq--description {
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+    margin-top: 22px;
+  }
+  .btn {
+    width: 333px;
+    height: 61px;
+    margin-top: 34px;
+    letter-spacing: -0.18px;
+  }
+  .btn__android {
+    margin-top: 17px;
+  }
+
+  footer {
+    max-width: 77%;
+    margin: 200px auto 25px;
+    padding: 0;
+    gap: 0;
+  }
+  .main-logo__footer {
+    width: 20%;
+    margin: 0;
+  }
+  .description__footer {
+    width: 56%;
+    text-align: left;
+    margin: 0 0 0 -127px;
+    justify-self: flex-start;
+  }
+}
